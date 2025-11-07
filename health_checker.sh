@@ -124,7 +124,3 @@ mkdir -p logs
 log_alert() {
   printf '[%s] ALERT: %s\n' "$(date '+%F %T')" "$1" >> "logs/alerts.log"
 }
-
-log_alert() {
-  printf '[%s] ALERT: %s\n' "$(date '+%Y/%m/%d %H:%M:%S')" "$1" >> "logs/alerts.log"
-}
