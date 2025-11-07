@@ -116,3 +116,11 @@ ALERT=0
 (( CPU_INT > CPU_THR )) && ALERT=1
 (( ROOT_USED_PCT > DISK_THR )) && ALERT=1
 exit $ALERT
+
+
+#!/bin/bash
+# Day 6: unified alert logger
+mkdir -p logs
+log_alert() {
+  printf '[%s] ALERT: %s\n' "$(date '+%F %T')" "$1" >> "logs/alerts.log"
+}
