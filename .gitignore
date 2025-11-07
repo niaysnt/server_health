@@ -1,0 +1,8 @@
+logs/
+*.log
+*.csv
+*system_log_*.txt
+cron_log.txt
+cron_test.txt
+*.save
+*~
