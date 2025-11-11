@@ -1,11 +1,15 @@
+bash
+
+mkdir -p .github/workflows
+
+cat > .github/workflows/ci.yml <<'YAML'
 name: CI - Server Health
 
 on:
  push:
-
-l   branches: [ main ]
+    branches: [ main ]
  pull_request:
-    branches: [ main }
+    branches: [ main ]
 
  jobs:
     run-health-check:
